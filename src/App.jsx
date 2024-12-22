@@ -1,4 +1,11 @@
 import style from "./App.module.css";
+import MyPhoto from "../imgs/MyPhoto.jpeg"
+import Instagram from "../imgs/instagram.svg"
+import Telegram from "../imgs/telegram.svg"
+import GitHub from "../imgs/github.svg"
+import todoist from "../imgs/todoist.jpeg"
+import lamoda from "../imgs/lamoda.png"
+
 
 export default function App() {
   return (
@@ -8,7 +15,7 @@ export default function App() {
           <div className={style.img_contacts}>
             <img
               className={style.MyPhoto}
-              src="/imgs/MyPhoto.jpeg"
+              src={MyPhoto}
               alt=""
             />
             <div className={style.contacts}>
@@ -18,7 +25,7 @@ export default function App() {
               >
                 <img
                   className={style.contact_img}
-                  src="/imgs/instagram.svg"
+                  src={Instagram}
                   alt=""
                 />
                 bt.ilya
@@ -26,7 +33,7 @@ export default function App() {
               <a className={style.link} href="https://t.me/bimbimbambambumbim">
                 <img
                   className={style.contact_img}
-                  src="/imgs/telegram.svg"
+                  src={Telegram}
                   alt=""
                 />
                 IlyaBackel
@@ -34,7 +41,7 @@ export default function App() {
               <a className={style.link} href="https://github.com/IlyaBackel?tab=repositories">
                 <img
                   className={style.contact_img}
-                  src="/imgs/github.svg"
+                  src={GitHub}
                   alt=""
                 />
                 Ilya Backel
@@ -130,7 +137,7 @@ export default function App() {
             <div className={style.contain_of_work}>
               <img
                 className={style.img_work}
-                src="/imgs/todoist.jpeg"
+                src={todoist}
                 alt=""
               />
               <div className={style.about_work}>
@@ -158,7 +165,7 @@ export default function App() {
             <div className={style.contain_of_work}>
               <img
                 className={style.img_work}
-                src="/imgs/lamoda.png"
+                src={lamoda}
                 alt=""
               />
               <div className={style.about_work}>
