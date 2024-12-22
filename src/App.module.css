@@ -139,6 +139,10 @@ hr {
     width: fit-content;
 }
 
+.text_about_me{
+    width: 90%;
+}
+
 .list_of_languages, .list_of_technologies, .list_of_environment {
     list-style-type: none;
     display: flex;
