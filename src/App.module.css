@@ -1,0 +1,292 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 5vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(129, 128, 128);
+    gap: 5rem;
+    padding-bottom: 2rem;
+}
+
+.resume_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(192, 109, 78, 0.708);
+    padding: 1rem 5%;
+}
+
+.MyPhoto {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.personal_information {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+    margin-right: 8rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+    gap: 0.4rem;
+    width: fit-content;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.link a{
+    width: fit-content;
+}
+
+.contact_img {
+    width: 15%;
+    margin-right: 0.5rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.name {
+    font-size: 6em;
+}
+
+.prof {
+    font-size: 2em;
+    margin-left: 1vw;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    margin-left: 10%;
+}
+
+.itemlist {
+    font-size: 1.2rem;
+}
+
+.img_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    width: 45%;
+    margin: 2rem 0;
+}
+
+hr {
+    border-radius: 10px;
+    background-color: rgb(136, 136, 136);
+    height: 5px;
+    margin: 0 5%;
+}
+
+.about_me, .skills_block, .works_block {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.title {
+    background-color: rgba(192, 109, 78, 0.708);
+    padding: 2rem 0 2rem 1rem;
+    border-radius: 30px;
+}
+
+.title p {
+    font-size: 3em;
+    text-align: left;
+}
+
+.text_about_me, .languages, .technologies, .environment {
+    margin-top: 2rem;
+    font-size: 1.8em;
+    margin-left: 2rem;
+    width: fit-content;
+}
+
+.list_of_languages, .list_of_technologies, .list_of_environment {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.list_of_languages li, .list_of_technologies li, .list_of_environment li {
+    border: 3px solid rgb(136, 136, 136);
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+}
+
+.works {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.img_work {
+    width: 90%;
+}
+
+.contain_of_work {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: 5px solid rgb(136, 136, 136);
+    border-radius: 7px;
+    padding: 2rem 3rem;
+    gap: 2rem;
+}
+
+.name_of_work {
+    font-size: 1.4em;
+}
+
+.description_of_work {
+    font-size: 1.3em;
+    margin: 3rem 0;
+}
+
+.link_git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_git a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .MyPhoto {
+        width: 40vw;
+        max-width: 120px;
+    }
+
+    .name {
+        font-size: 3em;
+    }
+
+    .prof {
+        font-size: 1.5em;
+    }
+
+    .title p {
+        font-size: 1.8em;
+    }
+
+    .text_about_me, .languages, .technologies, .environment {
+        font-size: 1.3em;
+    }
+
+    .contain_of_work {
+        width: 45%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .MyPhoto {
+        width: 50vw;
+        max-width: 100px;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+
+    .prof {
+        font-size: 1.5em;
+    }
+
+    .title p {
+        font-size: 1.5em;
+    }
+
+    .text_about_me, .languages, .technologies, .environment {
+        font-size: 1.2em;
+        margin-left: 1rem;
+    }
+
+    .contain_of_work {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .works {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 2em;
+    }
+
+    .prof {
+        font-size: 1.2em;
+    }
+
+    .title p {
+        font-size: 1.2em;
+    }
+
+    .text_about_me, .languages, .technologies, .environment {
+        font-size: 1em;
+        margin-left: 0;
+    }
+
+    .link {
+        font-size: 1em;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+}
